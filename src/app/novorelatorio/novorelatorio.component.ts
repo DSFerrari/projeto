@@ -9,7 +9,7 @@ import { novorelatorio } from './novorelatorio';
   styleUrl: './novorelatorio.component.css'
 })
 export class NovorelatorioComponent implements OnInit {
-  novorelatorios: novorelatorio[] = [];
+  novorelatorio: novorelatorio[] = [];
 
   formGroupnovorelatorio : FormGroup;
 
@@ -19,13 +19,13 @@ ngOnInit(): void {
    }
    loadnovorelatorio(){
   this.service.getNovorrelatorio().subscribe({
-   next: data => this.novorelatorios = data
+   next: data => this.novorelatorio = data
   });
 }
 
   constructor(private formBuilder: FormBuilder, private service: NovorelatorioService){
     this.formGroupnovorelatorio = formBuilder.group({
-      n: [''],
+      id: [''],
       data: [''],
       hora: [''],
       tipo: [''],
@@ -34,13 +34,13 @@ ngOnInit(): void {
       marca:  [''],
       defeito_relatado: [''],
       defeito_encontrado: [''],
-      manutenção: [false],
+      manutencao: [false],
       troca_de_peçaequipamento: [false]
     });
   }
  save(){
   this.service.save(this.formGroupnovorelatorio.value).subscribe({
-    next: data => this.novorelatorios.push(data)
+    next: data => this.novorelatorio.push(data)
     });
 
 }

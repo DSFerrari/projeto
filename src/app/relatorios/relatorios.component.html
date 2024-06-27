@@ -16,7 +16,7 @@
       <div class="row">
         <div class="card m-2">
           <div class="card-body">
-            
+
             <table class="table">
               <thead>
                 <tr>
@@ -26,20 +26,17 @@
                 </tr>
               </thead>
               <tbody>
-                <!--A parte abaixo repete de acordo com o BD-->
-                <tr>
-                  <td scope="row">1</td>
-                  <td>01/01/2024</td>
-                  <td>
+                  <tr *ngFor="let relatorio of relatorio">
+                    <th scope="row">{{relatorio.id}}</th>
+                    <td>{{relatorio.data}}</td>
                     <a routerLink="/verrelatorios"><button type="button" class="btn btn-secondary">Visualizar</button></a>
-                  </td>
                 </tr>
               </tbody>
             </table>
           </div>
       </div>
-      
-        
+
+
       </div>
     </div>
 

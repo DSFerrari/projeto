@@ -28,18 +28,14 @@
                 </tr>
               </thead>
               <tbody>
-                <!--A parte abaixo repete de acordo com o BD-->
-                <tr>
-                  <td scope="row">01/01/2024</td>
-                  <td>05/03/2024</td>
-                  <td>Julia Almeida</td>
-                  <td>Informática</td>
-                  <td>Notebook</td>
-                  <td>Queima de placa de vídeo</td>
-                  <td>
-                    <a routerLink="/verregistro"><button type="button" class="btn btn-secondary">Visualizar</button></a>
-                  </td>
-                </tr>
+                <tr *ngFor="let registro of registro">
+                  <th scope="row">{{registro.dataexpedicao}}</th>
+                  <td>{{registro.dataconclusao}}</td>
+                  <td>{{registro.responsavel}}</td>
+                  <td>{{registro.setor}}</td>
+                  <td>{{registro.pecaequipamento}}</td>
+                  <td>{{registro.diagnostico}}</td>
+                <td>
               </tbody>
             </table>
           </div>

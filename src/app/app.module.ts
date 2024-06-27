@@ -4,10 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NovorelatorioComponent } from './novorelatorio/novorelatorio.component';
-import { RegistrosComponent } from './registros/registros.component';
-import { RelatoriosComponent } from './relatorios/relatorios.component';
+import { RegistroComponent } from './registros/registros.component';
+import { RelatorioComponent } from './relatorios/relatorios.component';
 import { SolicitacoesComponent } from './solicitacoes/solicitacoes.component';
-import { VerregistroComponent } from './verregistro/verregistro.component';
 import { VerrelatorioComponent } from './verrelatorio/verrelatorio.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -19,10 +18,9 @@ import { RequisicoesComponent } from './requisicoes/requisicoes.component';
   declarations: [
     AppComponent,
     NovorelatorioComponent,
-    RegistrosComponent,
-    RelatoriosComponent,
+    RegistroComponent,
+    RelatorioComponent,
     SolicitacoesComponent,
-    VerregistroComponent,
     VerrelatorioComponent,
     HomeComponent,
     NavbarComponent,

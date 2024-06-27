@@ -1,0 +1,62 @@
+{
+  "novorelatorio": [
+    {
+      "id": "405a",
+      "n": "",
+      "data": "",
+      "hora": "",
+      "tipo": "",
+      "n_serie": "",
+      "modelo": "",
+      "marca": "",
+      "defeito_relatado": "",
+      "defeito_encontrado": "",
+      "manutenção": false,
+      "troca_de_peçaequipamento": false
+    }
+  ],
+  "Requisições": [
+    {
+      "data": "02/06/2024",
+      "type": "Manutenção",
+      "responsavel": "Carlos",
+      "setor": "Informatica",
+      "id": "8ef8"
+    },
+    {
+      "data": "01/06/2024",
+      "type": "Manutenção",
+      "responsavel": "José",
+      "setor": "Mecanica",
+      "id": "8ef8"
+    }
+  ],
+  "Relatórios": [
+    {
+      "N": "",
+      "Data": "",
+      "id": "d6fc"
+    }
+  ],
+  "Solicitações": [
+    {
+      "Data": "",
+      "Tipo": "",
+      "Responsável": "",
+      "Peça/Equipamento": "",
+      "Status": "",
+      "id": "fca6"
+    }
+  ],
+  "Registros": [
+    {
+      "Data de Expedição": "",
+      "Data de Conclusão": "",
+      "Responsável": "",
+      "Setor": "",
+      "Peça/Equipamento": "",
+      "Diagnóstico": "",
+      "id": "9c5a"
+    }
+  ]
+}

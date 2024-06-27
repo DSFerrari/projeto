@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/assets/img/logo.png">
+    <title>Suporte</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="container m-4">
+      <div class="row">
+        <h1>Novo relatório</h1>
+      </div>
+      <div class="row">
+        <div class="card m-2">
+          <div class="card-body">
+            <form [formGroup]="formGroupnovorelatorio">
+            <div class="mb-3">
+                <label for="num" class="form-label">N°</label>
+                <input type="number" class="form-control" id="n" formcontrolname="n"/>
+            </div>
+            <div class="mb-3">
+                <label for="data" class="form-label">Data</label>
+                <input type="date" class="form-control" id="data" formcontrolname="data"/>
+            </div>
+            <div class="mb-3">
+                <label for="hora" class="form-label">Hora</label>
+                <input type="time" class="form-control" id="hora" formcontrolname="hora"/>
+            </div>
+            <h3 class="mt-4">Equipamento</h3>
+            <div class="mb-3">
+                <label for="tipo" class="form-label">Tipo</label>
+                <input type="text" class="form-control" id="tipo" formcontrolname="tipo"/>
+            </div>
+            <div class="mb-3">
+                <label for="numserie" class="form-label">N° Série</label>
+                <input type="number" class="form-control" id="numserie" formcontrolname="n_serie"/>
+            </div>
+            <div class="mb-3">
+                <label for="modelo" class="form-label">Modelo</label>
+                <input type="text" class="form-control" id="modelo" formcontrolname="modelo"/>
+            </div>
+            <div class="mb-3">
+                <label for="marca" class="form-label">Marca</label>
+                <input type="text" class="form-control" id="marca" formcontrolname="marca"/>
+            </div>
+            <div class="mb-3">
+                <label for="defeitorelatado" class="form-label">Defeito Relatado</label>
+                <textarea class="form-control" id="defeitorelatado" rows="3" formcontrolname="defeito_relatado"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="defeitoencontrado" class="form-label">Defeito Encontrado</label>
+                <textarea class="form-control" id="defeitoencontrado" rows="3" formcontrolname="defeito_encontrado"></textarea>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="manutencao" id="manutencao" formcontrolname="manutenção"/>
+                <label class="form-check-label" for="manutencao">
+                  Manutenção
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="troca" id="troca" formcontrolname="troca_de_peçaequipamento"/>
+                <label class="form-check-label" for="troca">
+                  Troca de peça/equipamento
+                </label>
+            </div>
+            <button type="button" (click)="save()" class="btn btn-success mt-4">Confirmar</button>
+            </form>
+          </div>
+      </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

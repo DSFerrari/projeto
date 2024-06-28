@@ -13,6 +13,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RequisicoesComponent } from './requisicoes/requisicoes.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { RequisicoesComponent } from './requisicoes/requisicoes.component';
     HomeComponent,
     NavbarComponent,
     RequisicoesComponent,
+    LoginComponent,
   ],
 
   imports: [

@@ -3,7 +3,7 @@ import { Time } from "@angular/common";
 export interface novorelatorio{
     id: number;
     data: Date;
-    Hora: Time;
+    hora: Time;
     tipo: string;
     n_serie: number;
     modelo: string;
@@ -11,5 +11,5 @@ export interface novorelatorio{
     defeito_relatado: string;
     defeito_encontrado: string;
     manutencao: boolean;
-    troca_de_peçaequipamento: boolean
+    troca_de_pecaequipamento: boolean
 }

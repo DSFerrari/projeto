@@ -35,13 +35,12 @@ ngOnInit(): void {
       defeito_relatado: [''],
       defeito_encontrado: [''],
       manutencao: [false],
-      troca_de_peçaequipamento: [false]
+      troca_de_pecaequipamento: [false]
     });
   }
  save(){
   this.service.save(this.formGroupnovorelatorio.value).subscribe({
     next: data => this.novorelatorio.push(data)
-    });
-
+  })
 }
 }

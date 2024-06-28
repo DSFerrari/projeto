@@ -10,21 +10,8 @@
       "marca": "",
       "defeito_relatado": "",
       "defeito_encontrado": "",
-      "manutenção": false,
-      "troca_de_peçaequipamento": false
-    },
-    {
-      "id": "",
-      "data": "",
-      "hora": "",
-      "tipo": "",
-      "n_serie": "",
-      "modelo": "",
-      "marca": "",
-      "defeito_relatado": "",
-      "defeito_encontrado": "",
       "manutencao": false,
-      "troca_de_peçaequipamento": false
+      "troca_de_pecaequipamento": false
     }
   ],
   "Requisições": [
